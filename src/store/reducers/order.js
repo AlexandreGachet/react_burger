@@ -8,11 +8,11 @@ const initialState = {
 }
 
 const purchaseInit = (state = initialState) => {
-    return updateObject(state, { purchased: false})
+    return updateObject(state, { purchased: false })
 }
 
 const purchaseBurgerStart = (state = initialState) => {
-    return updateObject(state, { loading: false})
+    return updateObject(state, { loading: true })
 }
 
 const purchaseBurgerSuccess = (state = initialState, action) => {
@@ -25,11 +25,11 @@ const purchaseBurgerSuccess = (state = initialState, action) => {
 }
 
 const purchaseBurgerfail = (state = initialState) => {
-    return updateObject(state, { loading: false})
+    return updateObject(state, { loading: false })
 }
 
 const fetchOrdersStart = (state = initialState) => {
-    return updateObject(state, { loading: true})
+    return updateObject(state, { loading: true })
 }
 
 const fetchOrdersSuccess = (state = initialState, action) => {
